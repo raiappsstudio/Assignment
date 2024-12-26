@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'live_assignment.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -12,7 +14,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: HomePage(),
+      home: LiveAssignment1(),
     );
   }
 }
@@ -57,9 +59,9 @@ class HomePage extends StatelessWidget {
             'Ice Cream is Very Delicious Righ?',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
-
-          SizedBox(height: 30,),
-
+          SizedBox(
+            height: 30,
+          ),
           Center(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -77,10 +79,9 @@ class HomePage extends StatelessWidget {
             'Programming is not boring if you love it',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
-
-          SizedBox(height: 30,),
-
-
+          SizedBox(
+            height: 30,
+          ),
           Center(
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -98,8 +99,6 @@ class HomePage extends StatelessWidget {
             'If you submit code directly copy from chatgpt then mark will 0',
             style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
-
-
         ],
       ),
     );
